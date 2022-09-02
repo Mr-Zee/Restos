@@ -47,6 +47,21 @@ border:1px solid #FFEFF8;
 margin:10px auto;
 width:95%;
 `
+
+const Button = styled.button`
+    cursor:none;
+    height:30px;
+    align-items: center;
+    margin: 10px 20px;
+    border-radius: 5px;
+    background-color:  #FFFFFF;
+    color:#270D41;
+    font-size:11px;
+    font-weight:400;
+    border:1px solid #580EAF;
+    padding: 5px 10px;
+    margin-left:auto;
+    `
 const ProdBox = () => {
     return (
         <Container >
@@ -89,5 +104,19 @@ export const DeliveryBox = () => {
             <Hr />
         </Container>
         </Link>
+    )
+}
+export const DeliveryColBox = () => {
+    return (
+        <Container>
+            <HeadBox>
+            <DeliveryImage alt="image " src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/lkn0extnvjywfts4q7gw" />
+                <Heading>Jonathan Young</Heading>
+                <Rate>320</Rate>
+                <Button>Collect</Button>
+            </HeadBox>
+            
+            <Hr />
+        </Container>
     )
 }

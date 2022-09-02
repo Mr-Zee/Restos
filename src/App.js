@@ -20,6 +20,7 @@ import Categories from "./pages/Categories";
 import styled from "styled-components";
 import DeliveryBoys from "./pages/DeliveryBoys";
 import DeliveryDetail from "./pages/DeliveryDetail";
+import DeliveryCollect from "./pages/DeliveryCollect";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -45,6 +46,7 @@ function App() {
           <Route path="/category" element={<Categories />} />
           <Route path="/deliveryboys" element={<DeliveryBoys />} />
           <Route path="/deliverydetail" element={<DeliveryDetail />} />
+          <Route path="/deliverycollect" element={<DeliveryCollect />} />
 
         </Routes>
         <Footer />
