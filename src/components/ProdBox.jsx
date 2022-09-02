@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 const Container = styled.div`
  justify-content: center;
@@ -77,7 +78,7 @@ export const ProbHead = () => {
 
 export const DeliveryBox = () => {
     return (
-
+        <Link to="/deliverydetail" style={{textDecoration:"none"}}>
         <Container>
             <HeadBox>
             <DeliveryImage alt="image " src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/lkn0extnvjywfts4q7gw" />
@@ -87,5 +88,6 @@ export const DeliveryBox = () => {
             
             <Hr />
         </Container>
+        </Link>
     )
 }

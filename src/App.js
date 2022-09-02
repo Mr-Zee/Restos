@@ -19,6 +19,7 @@ import Products from "./pages/Products";
 import Categories from "./pages/Categories";
 import styled from "styled-components";
 import DeliveryBoys from "./pages/DeliveryBoys";
+import DeliveryDetail from "./pages/DeliveryDetail";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -41,8 +42,10 @@ function App() {
           <Route path="/location" element={<Location />} />
           <Route path="/order" element={<Order />} />
           <Route path="/product" element={<Products />} />
-          <Route path="/category" element={<Categories/>} />
-          <Route path="/deliveryboys" element={<DeliveryBoys/>} />
+          <Route path="/category" element={<Categories />} />
+          <Route path="/deliveryboys" element={<DeliveryBoys />} />
+          <Route path="/deliverydetail" element={<DeliveryDetail />} />
+
         </Routes>
         <Footer />
       </Router>
